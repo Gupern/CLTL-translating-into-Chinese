@@ -1,0 +1,11 @@
+ 1.2. Notational Conventions
+
+A number of special notational conventions are used throughout this book for the sake of conciseness.
+
+    Decimal Numbers
+    Nil, False, and the Empty List
+    Evaluation, Expansion, and Equivalence
+    Errors
+    Descriptions of Functions and Other Entities
+    The Lisp Reader
+    Overview of Syntax 
