@@ -2,6 +2,11 @@
 
 A number of special notational conventions are used throughout this book for the sake of conciseness.
 
+1.2. 符号约定
+
+为了简明和方便起见，我们约定，使用以下一系列记号。
+
+
     Decimal Numbers
     Nil, False, and the Empty List
     Evaluation, Expansion, and Equivalence
