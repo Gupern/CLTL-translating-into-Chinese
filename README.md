@@ -3,6 +3,8 @@
 
 - Starting time: 2016-6-6
 - Last modified time: 2016-6-6 20:35
+- Task lists:
+
 - [ ] Preface
 - [ ] Chapter 1
 - [ ] Chapter 2
