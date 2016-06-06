@@ -11,3 +11,16 @@ In Common Lisp, as in most Lisp dialects, the symbol nil is used to represent bo
 (get 'nil 'color)       ;Emphasize use as a symbol
 
 Any data object other than nil is construed to be Boolean ``not false'', that is, ``true''. The symbol t is conventionally used to mean ``true'' when no other value is more appropriate. When a function is said to ``return false'' or to ``be false'' in some circumstance, this means that it returns nil. However, when a function is said to ``return true'' or to ``be true'' in some circumstance, this means that it returns some value other than nil, but not necessarily t. 
+
+1.2.2. Nil，False和Empty List Nil
+
+在Common Lisp语言中, 如在大多数Lisp方言中一般，标识符nil被用来表示空表和布尔测试中的“false”值。同时，一个空表也可以被写成 ( ) ，他们都共同表示 nil 。（有时候对程序包系统的不当操作，可能导致字母序列 nil 不被识别为空表，而是被识别为其他有相同名字的标识符。本书将对这种隐晦的可能性避而不谈。）在Lisp系统所涉及的范围内，这两种符号记法是可以相互交换的。然而，由于风格问题，本书将使用 ( ) ，来强调其空表的性质，使用 nil 来强调其布尔值“false”。 ’nil（注意 nil 前面的引号标记）被用来强调标识符的使用。比如：
+(defun three () 3)      ; 强调空参数列表 
+
+(append '() '()) => ()  ; 强调空表的用法 
+
+(not nil) => t          ; 强调作为布尔值“false” 
+
+(get 'nil 'color)       ; 强调作为标识符
+
+除 nil 外的所有数据对象的布尔值都是“not false”，也就是“true”。按照惯例，在没有其他赋值的情况下，标识符 t 代表“true”。在方程中说“return false”或者“be false”都表示返回 nil 。然而，在方程中说“return true”或者“be true”表示返回一些非 nil 的值，并且不一定是 t 。
