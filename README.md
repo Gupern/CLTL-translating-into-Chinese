@@ -17,6 +17,5 @@ Task lists:
 - [ ] 1.2.5. Descriptions of Functions and Other Entities
 - [ ] 1.2.6. The Lisp Reader
 - [ ] 1.2.7. Overview of Syntax 
-- 
 - [ ] Chapter 2
 - [ ] ......
