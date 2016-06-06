@@ -1,0 +1,13 @@
+ 1. Introduction
+
+Common Lisp is a new dialect of Lisp, a successor to MacLisp [33,37], influenced strongly by Zetalisp [55,34] and to some extent by Scheme [46] and Interlisp [50].
+
+    Purpose
+    Notational Conventions
+        Decimal Numbers
+        Nil, False, and the Empty List
+        Evaluation, Expansion, and Equivalence
+        Errors
+        Descriptions of Functions and Other Entities
+        The Lisp Reader
+        Overview of Syntax 
