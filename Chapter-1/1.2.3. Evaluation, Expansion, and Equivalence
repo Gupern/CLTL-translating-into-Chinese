@@ -18,3 +18,11 @@ The symbol == is used in examples to indicate code equivalence. For example,
 
 means ``the value and effects of evaluating the form (gcd x (gcd y z)) are always the same as the value and effects of (gcd (gcd x y) z) for any values of the variables x, y, and z.'' This implies that the two pieces of code do the same thing; however, neither directly defines the other in the way macro expansion does.
 
+1.2.3. Evaluation, Expansion, and Equivalence
+
+Lisp中代码的执行叫做evaluation（求值），因为执行一段代码经常会得到一个数据对象，我们称它为value（值）。符号 => 表示evaluation（求值），比如：
+(+ 4 5) => 9
+表示 ``由代码 (+ 4 5) 而得出的值是9。（或者说将成为9，或者原本就是9）''
+符号 -> 表示macro expansion（宏扩展），比如：
+(push x v) -> (setf v (cons x v))
+表示 `` (push x v) 的宏调用形式是 (setf v (cons x v))'' 
