@@ -1,0 +1,3 @@
+1.2.6 The Lisp Reader
+
+The term ``Lisp reader'' refers not to you, the reader of this book, nor to some person reading Lisp code, but specifically to a Lisp procedure, namely the function read, which reads characters from an input stream and interprets them by parsing as representations of Lisp objects. 
