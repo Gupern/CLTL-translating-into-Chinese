@@ -1,0 +1,20 @@
+ 1.2.3. Evaluation, Expansion, and Equivalence
+
+Execution of code in Lisp is called evaluation because executing a piece of code normally results in a data object called the value produced by the code. The symbol => is used in examples to indicate evaluation. For example,
+
+(+ 4 5) => 9
+
+means ``the result of evaluating the code (+ 4 5) is (or would be, or would have been) 9.''
+
+The symbol -> is used in examples to indicate macro expansion. For example,
+
+(push x v) -> (setf v (cons x v))
+
+means ``the result of expanding the macro-call form (push x v) is (setf v (cons x v)).'' This implies that the two pieces of code do the same thing; the second piece of code is the definition of what the first does.
+
+The symbol == is used in examples to indicate code equivalence. For example,
+
+(gcd x (gcd y z)) == (gcd (gcd x y) z)
+
+means ``the value and effects of evaluating the form (gcd x (gcd y z)) are always the same as the value and effects of (gcd (gcd x y) z) for any values of the variables x, y, and z.'' This implies that the two pieces of code do the same thing; however, neither directly defines the other in the way macro expansion does.
+
