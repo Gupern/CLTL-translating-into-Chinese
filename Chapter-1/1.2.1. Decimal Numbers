@@ -1,3 +1,7 @@
  1.2.1. Decimal Numbers
 
 All numbers in this book are in decimal notation unless there is an explicit indication to the contrary. (Decimal notation is normally taken for granted, of course. Unfortunately, for certain other dialects of Lisp, MacLisp in particular, the default notation for numbers is octal (base 8) rather than decimal, and so the use of decimal notation for describing Common Lisp is, taken in its historical context, a bit unusual!) 
+
+1.2.1. 十进制计数法
+
+除非有特别的说明，本书所有的数字都采用十进制计数法。（一般情况下，使用十进制计数法是理所当然的。然而，对于其他的Lisp方言，尤其是MacLisp，默认使用的是八进制计数法。所以从Common Lisp发展的历史背景来看，采用十进制计数法，有点儿不太寻常。）
