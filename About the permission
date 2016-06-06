@@ -1,0 +1,46 @@
+I have send an email to ai.repository@cs.cmu.edu to ask for permission, but it reply like following:
+
+----------------------------------------email content begin--------------------------------------------------------------
+This is an automatically generated Delivery Status Notification.
+
+Delivery to the following recipients failed.
+
+ai.repository@cs.cmu.edu
+
+--附转发的邮件--
+From: guperner@hotmail.com
+To: ai.repository@cs.cmu.edu
+Subject: About the Common Lisp The Language: 2nd edition
+Date: Mon, 6 Jun 2016 13:56:01 +0000
+
+Dear professor:
+    I am a Chinese student, and I want to translate the book Common Lisp The Language, 2nd Edition into Chinese for the purpose of promoting the development of LISP in China. (Actually, I do it for fun.)  And I have putted it on the Github. (link: https://github.com/Gupern/CLTL-translating-into-Chinese)
+    I want to know whether it infringing the author's copyrigh or not? Or can you give me the permission to translate it and spread it without commercial purpose?
+   
+    I look forward to hearing form you soon.
+
+                                    Yours faithfully,
+                                        Gupern
+
+                    CS, Shantou University, Guangdong Province, China.
+----------------------------------------email content end--------------------------------------------------------------
+
+But I have find the Conditions on the link HTTP://WWW.CS.CMU.EDU/AFS/CS/PROJECT/AI-REPOSITORY/AI/README.TXT
+It mention:
+----------------------------------------condition content begin--------------------------------------------------------------
+. FREELY DISTRIBUTABLE and FREE USAGE. Use and copying of the
+   software and the preparation of derivative works based on this
+   software are permitted, subject to the author's terms and conditions.
+   Public domain software and software covered by the GNU General Public
+   License automatically meet this definition. (To save space, a single
+   copy of the various versions of the GNU GPL have been placed in the
+   directory copying/gpl/)
+
+   Copyrighted software will be included if and only if the author(s)
+   agree to let the software be distributed and used without fee. The
+   authors of copyrighted software may place certain other restrictions
+   on the software, such as restrictions against the commercialization of
+   the software. See 4 for details.
+----------------------------------------condition content end--------------------------------------------------------------
+
+So I think I am permitted to start this project without commercial purpose, and if some guys want me to stop this project because some law conditions, welcome to contact me(my email is guperner@hotmail.com.)
