@@ -1,0 +1,13 @@
+ 1.2.2. Nil, False, and the Empty List
+
+In Common Lisp, as in most Lisp dialects, the symbol nil is used to represent both the empty list and the ``false'' value for Boolean tests. An empty list may, of course, also be written (); this normally denotes the same object as nil. (It is possible, by extremely perverse manipulation of the package system, to cause the sequence of letters nil to be recognized not as the symbol that represents the empty list but as another symbol with the same name. This obscure possibility will be ignored in this book.) These two notations may be used interchangeably as far as the Lisp system is concerned. However, as a matter of style, this book uses the notation () when it is desirable to emphasize the use of an empty list, and uses the notation nil when it is desirable to emphasize the use of the Boolean ``false''. The notation 'nil (note the explicit quotation mark) is used to emphasize the use of a symbol. For example:
+
+(defun three () 3)      ;Emphasize empty parameter list 
+
+(append '() '()) => ()  ;Emphasize use of empty lists 
+
+(not nil) => t          ;Emphasize use as Boolean ``false'' 
+
+(get 'nil 'color)       ;Emphasize use as a symbol
+
+Any data object other than nil is construed to be Boolean ``not false'', that is, ``true''. The symbol t is conventionally used to mean ``true'' when no other value is more appropriate. When a function is said to ``return false'' or to ``be false'' in some circumstance, this means that it returns nil. However, when a function is said to ``return true'' or to ``be true'' in some circumstance, this means that it returns some value other than nil, but not necessarily t. 
