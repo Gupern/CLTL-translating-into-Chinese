@@ -1,0 +1,24 @@
+ 1.2.4. Errors
+When this book specifies that it ``is an error'' for some situation to occur, this means that:
+
+    No valid Common Lisp program should cause this situation to occur.
+
+    If this situation occurs, the effects and results are completely undefined as far as adherence to the Common Lisp specification is concerned.
+
+    No Common Lisp implementation is required to detect such an error. Of course, implementors are encouraged to provide for detection of such errors wherever reasonable. 
+
+This is not to say that some particular implementation might not define the effects and results for such a situation; the point is that no program conforming to the Common Lisp specification may correctly depend on such effects or results.
+
+On the other hand, if it is specified in this book that in some situation ``an error is signaled,'' this means that:
+
+    If this situation occurs, an error will be signaled (see error and cerror).
+
+    Valid Common Lisp programs may rely on the fact that an error will be signaled.
+
+    Every Common Lisp implementation is required to detect such an error. 
+
+In places where it is stated that so-and-so ``must'' or ``must not'' or ``may not'' be the case, then it ``is an error'' if the stated requirement is not met. For example, if an argument ``must be a symbol,'' then it ``is an error'' if the argument is not a symbol. In all cases where an error is to be signaled, the word ``signaled'' is always used explicitly in this book.
+
+change_begin
+X3J13 has adopted a more elaborate terminology for errors, and has made some effort to specify the type of error to be signaled in situations where signaling is appropriate. This effort was not complete as of September 1989, and I have made little attempt to incorporate the new error terminology or error type specifications in this book. However, the new terminology is described and used in the specification of the Common Lisp Object System appearing in chapter 28; this gives the flavor of how erroneous situations will be described, and appropriate actions prescribed, in the forthcoming ANSI Common Lisp standard.
+change_end
