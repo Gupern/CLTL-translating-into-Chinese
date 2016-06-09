@@ -11,3 +11,15 @@ Common Lisp is a new dialect of Lisp, a successor to MacLisp [33,37], influenced
         Descriptions of Functions and Other Entities
         The Lisp Reader
         Overview of Syntax 
+ 1. 簡介
+ Common Lisp 是Lisp的一種方言。作爲MacLisp的繼承者[33,37], Common Lisp深受Zetalisp[55,34]的影響並拓展了Scheme[46]和Interlisp[50].
+ 
+    目的
+    符號約定
+        十進制數字
+        Nil, False, 和空表(Empty List)
+        評估(Evaluation), 拓展(Expansion)和等式(Equivalence)
+        Errors
+        方程和其他實體的描述
+        Lisp Reader
+        語法一覽
