@@ -8,7 +8,7 @@ This project is to translate the book Common Lisp The Language: 2nd edition into
 Task lists:
 - [ ] Preface
 - Chapter 1
-- [ ] 1. Introduction
+- [x] 1. Introduction
 - [ ] 1.1. Purpose
 - [x] 1.2. Notational Conventions
 - [x] 1.2.1. Decimal Numbers
