@@ -17,7 +17,7 @@ Contents：
 - [ ]   Evaluation, Expansion, and Equivalence
 - [ ]   Errors
 - [ ]   Descriptions of Functions and Other Entities
-- [ ]   The Lisp Reader
+- [x]   The Lisp Reader
 - [ ]   Overview of Syntax
 - [ ] 2. Data Types
 - [ ]   Numbers
