@@ -1,3 +1,7 @@
 1.2.6 The Lisp Reader
 
+1.2.6 Lisp Reader
+
 The term ``Lisp reader'' refers not to you, the reader of this book, nor to some person reading Lisp code, but specifically to a Lisp procedure, namely the function read, which reads characters from an input stream and interprets them by parsing as representations of Lisp objects. 
+
+本文中的术语“Lisp reader” 并不是指正在阅读此书的你，也不是那些在读lisp代码的人，而是特指lisp的过程。这种过程被成为功能读取（function read），是一种从输入流读取字符，并且解析这些作为Lisp对象的字符流并解释执行。
