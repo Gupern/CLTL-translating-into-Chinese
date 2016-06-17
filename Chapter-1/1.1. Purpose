@@ -9,13 +9,18 @@ Common Lisp 致力于达到以下目标：
 Commonality
 
 通用性
+
     Common Lisp originated in an attempt to focus the work of several implementation groups, each of which was constructing successor implementations of MacLisp for different computers. These implementations had begun to diverge because of the differences in the implementation environments: microcoded personal computers (Zetalisp, Spice Lisp), commercial timeshared computers (NIL-the ``New Implementation of Lisp''), and supercomputers (S-1 Lisp). While the differences among the several implementation environments of necessity will continue to force certain incompatibilities among the implementations, Common Lisp serves as a common dialect to which each implementation makes any necessary extensions.
     
     在Common Lisp诞生前，各个开发团体在各自的计算机上都有着自己的MacLisp实现，彼此之间撰写的代码并不能无缝兼容。在这种背景下，为了让各个开发团体可以协同开发（专注于工作本身，而不必去烦恼Lisp方言标准的问题），作为MacLisp的继承者的Common Lisp诞生了。在一开始，导致各种Lisp实现分歧的原因是人们在不同的实现环境下创造了各自的的Lisp方言：比如在微码个人电脑（microcoded personal computers）上运行的方言如Zetalisp，Spice Lisp，在商业时享电脑（commercial timeshared computers）上运行的NIL-the ''New Implementation of Lisp'' 和在超级电脑（supercomputers）上运行的S-1 Lisp等。这些Lisp实现的运行机器环境上的差异，导致各种Lisp实现一直不兼容。在这种情况下，Common Lisp的价值便体现出来了，他是一种能运行在不同的机器上，在必要时也能使用任何扩展（extensions）的Lisp通用方言。
     
 Portability
 
+可移植性
+
     Common Lisp intentionally excludes features that cannot be implemented easily on a broad class of machines. On the one hand, features that are difficult or expensive to implement on hardware without special microcode are avoided or provided in a more abstract and efficiently implementable form. (Examples of this are the invisible forwarding pointers and locatives of Zetalisp. Some of the problems that they solve are addressed in different ways in Common Lisp.) On the other hand, features that are useful only on certain ``ordinary'' or ``commercial'' processors are avoided or made optional. (An example of this is the type declaration facility, which is useful in some implementations and completely ignored in others. Type declarations are completely optional and for correct programs affect only efficiency, not semantics.) Common Lisp is designed to make it easy to write programs that depend as little as possible on machine-specific characteristics, such as word length, while allowing some variety of implementation techniques.
+    
+    Common Lisp有意地摒弃了那些不能普遍运行在各种机器上的特性。一方面，那些在硬件上一旦离开微码就难以实现的（或者说实现起来需要花费大量资源的）特性会被摒弃掉，或者提供一个更加抽象和有效的实现形式。例如转发指针（forwarding pointers）和Zetalisp的位置格（locatives）等，而他们在Common Lisp中解决问题的方式是不一样的。另一方面，那些只能在特定的“普通的”或“商业的”处理器上使用的特性也会被摒弃掉，或者设为可选的特性。举个例子，类型声明机制（facility）在某些实现中是很有用的，但是在其他实现中却是完全不可行的。对正确的程序来说，类型声明只会影响其效率，而不会影响语义，因此类型声明完全是可选择的（而不是必需的）。 设计Common Lisp的目的是使它容易编写程序，尽可能少地依赖于特定机器的特性，比如字长等，同时也允许一些各种各样的实现（implementation）技术。
 
 Consistency
     Most Lisp implementations are internally inconsistent in that by default the interpreter and compiler may assign different semantics to correct programs. This semantic difference stems primarily from the fact that the interpreter assumes all variables to be dynamically scoped, whereas the compiler assumes all variables to be local unless explicitly directed otherwise. This difference has been the usual practice in Lisp for the sake of convenience and efficiency but can lead to very subtle bugs. The definition of Common Lisp avoids such anomalies by explicitly requiring the interpreter and compiler to impose identical semantics on correct programs so far as possible.
