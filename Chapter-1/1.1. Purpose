@@ -23,8 +23,13 @@ Portability
     Common Lisp有意地摒弃了那些不能普遍运行在各种机器上的特性。一方面，那些在硬件上一旦离开微码就难以实现的（或者说实现起来需要花费大量资源的）特性会被摒弃掉，或者提供一个更加抽象和有效的实现形式。例如转发指针（forwarding pointers）和Zetalisp的位置格（locatives）等，而他们在Common Lisp中解决问题的方式是不一样的。另一方面，那些只能在特定的“普通的”或“商业的”处理器上使用的特性也会被摒弃掉，或者设为可选的特性。举个例子，类型声明机制（facility）在某些实现中是很有用的，但是在其他实现中却是完全不可行的。对正确的程序来说，类型声明只会影响其效率，而不会影响语义，因此类型声明完全是可选择的（而不是必需的）。 设计Common Lisp的目的是使它容易编写程序，尽可能少地依赖于特定机器的特性，比如字长等，同时也允许一些各种各样的实现（implementation）技术。
 
 Consistency
-    Most Lisp implementations are internally inconsistent in that by default the interpreter and compiler may assign different semantics to correct programs. This semantic difference stems primarily from the fact that the interpreter assumes all variables to be dynamically scoped, whereas the compiler assumes all variables to be local unless explicitly directed otherwise. This difference has been the usual practice in Lisp for the sake of convenience and efficiency but can lead to very subtle bugs. The definition of Common Lisp avoids such anomalies by explicitly requiring the interpreter and compiler to impose identical semantics on correct programs so far as possible.
 
+一致性
+
+    Most Lisp implementations are internally inconsistent in that by default the interpreter and compiler may assign different semantics to correct programs. This semantic difference stems primarily from the fact that the interpreter assumes all variables to be dynamically scoped, whereas the compiler assumes all variables to be local unless explicitly directed otherwise. This difference has been the usual practice in Lisp for the sake of convenience and efficiency but can lead to very subtle bugs. The definition of Common Lisp avoids such anomalies by explicitly requiring the interpreter and compiler to impose identical semantics on correct programs so far as possible.
+    
+    大多数Lisp实现，内部都是不一致的。默认情况下，解释器和编译器可以分配不同的语义去纠正程序。会产生这种语义之分的根本原因是：解释器假定所有的变量都是在一个动态范围内的值，然而编译器却是假定所有的变量都是确定的值（除非另有说明）。这在Lisp应用中是司空见惯的，它可以提高效率和便携性，不过也可能导致一些微妙的bugs。因此，Common Lisp明确定义了要求解释器和编译器使用相同的语义，去尽可能地避免这种异常以纠正程序。
+    
 Expressiveness
     Common Lisp culls what experience has shown to be the most useful and understandable constructs from not only MacLisp but also Interlisp, other Lisp dialects, and other programming languages. Constructs judged to be awkward or less useful have been excluded. (An example is the store construct of MacLisp.)
 
