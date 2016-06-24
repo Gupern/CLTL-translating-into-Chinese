@@ -1,9 +1,8 @@
 # CLTL-translating-into-Chinese
 This project is to translate the book Common Lisp The Language: 2nd edition into Chinese. 
 - Please read the file ***About Permission*** firstly.
-- 由于这半年要准备硕士研究生考试，因此翻译进度稍慢，每天只能翻译一点点。
-- 相信滴水穿石总能完成的，祝我考上THU吧。考上了就可以当个科学家了，和伞哥一样。
-- 今日感悟：就快忙完了，也单身了（虽然我依然爱着她），做些感兴趣的事吧。
+- 由于这半年要准备硕士研究生考试，因此翻译进度稍慢，可能几天只能翻译一点点。
+- 相信滴水穿石总能完成的，祝我考上THU吧。考上了就可以追上伞哥的脚步，当个科学家了。
 
 Contents：
 - [ ] Preface SECOND EDITION
