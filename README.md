@@ -2,7 +2,9 @@
 This project is to translate the book Common Lisp The Language: 2nd edition into Chinese. 
 - Please read the file ***About Permission*** firstly.
 - 由于这半年要准备硕士研究生考试，因此翻译进度稍慢，可能几天只能翻译一点点。
-- 相信滴水穿石总能完成的，祝我考上THU吧。考上了就可以追上伞哥的脚步，当个科学家了。
+- 自7月毕业以来，一直在学高数，加上感情问题、毕业后心态不稳等，都荒废了翻译了
+- 现在平静下来后发现，其实考研没那么难，不要放弃自己喜欢的事
+
 
 Contents：
 - [ ] Preface SECOND EDITION
