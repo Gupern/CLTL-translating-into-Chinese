@@ -31,36 +31,17 @@ Consistency
     大多数Lisp实现，内部都是不一致的。默认情况下，解释器和编译器可以分配不同的语义去纠正程序。会产生这种语义之分的根本原因是：解释器假定所有的变量都是在一个动态范围内的值，然而编译器却是假定所有的变量都是确定的值（除非另有说明）。这在Lisp应用中是司空见惯的，它可以提高效率和便携性，不过也可能导致一些微妙的bugs。因此，Common Lisp明确定义了要求解释器和编译器使用相同的语义，去尽可能地避免这种异常以纠正程序。
     
 Expressiveness
-
-表达方式多样
-
     Common Lisp culls what experience has shown to be the most useful and understandable constructs from not only MacLisp but also Interlisp, other Lisp dialects, and other programming languages. Constructs judged to be awkward or less useful have been excluded. (An example is the store construct of MacLisp.)
 
-    Common Lisp 从MacLisp、Interlisp、其他Lisp方言甚至是其他编程语言中精心挑选出最实用且易于理解的结构。此外还删除掉了一些笨拙的和不实用的结构。（比如MacLisp的存储结构就被剔除掉了）
-
 Compatibility
-
-兼容性
-
     Unless there is a good reason to the contrary, Common Lisp strives to be compatible with Lisp Machine Lisp, MacLisp, and Interlisp, roughly in that order.
 
-    除非有明确的理由，不然Common Lisp总是致力于与Lisp Machine Lisp、MacLisp和Interlisp相兼容，兼容性按排列顺序递减。
-
 Efficiency
-
-效率
-
     Common Lisp has a number of features designed to facilitate the production of high-quality compiled code in those implementations whose developers care to invest effort in an optimizing compiler. One implementation of Common Lisp, namely S-1 Lisp, already has a compiler that produces code for numerical computations that is competitive in execution speed to that produced by a Fortran compiler [11]. The S-1 Lisp compiler extends the work done in MacLisp to produce extremely efficient numerical code [19].
 
-    对于那些注重效率的开发者们来说，Common Lisp有一系列特性可以帮助他们在他们的实现（implementation）上编写出高质量编译代码。一个Common Lisp实现（S-1 Lisp）已经有一个编译器可以编译出数值计算的代码，这些代码的执行速度可以与Fortran媲美【11】。可以这么说，S-1 Lisp编译器做的工作，比在MacLisp中的关于数值代码的生成工作还要好【19】。
-
 Power
-
-强大
-
     Common Lisp is a descendant of MacLisp, which has traditionally placed emphasis on providing system-building tools. Such tools may in turn be used to build the user-level packages such as Interlisp provides; these packages are not, however, part of the Common Lisp core specification. It is expected such packages will be built on top of the Common Lisp core.
 
-    
 Stability
     It is intended that Common Lisp will change only slowly and with due deliberation. The various dialects that are supersets of Common Lisp may serve as laboratories within which to test language extensions, but such extensions will be added to Common Lisp only after careful examination and experimentation.
 
