@@ -1,10 +1,8 @@
 # CLTL-translating-into-Chinese
 This project is to translate the book Common Lisp The Language: 2nd edition into Chinese. 
 - Please read the file ***About Permission*** firstly.
-- 我做事总是太浮躁，每天看60页--90页专业课，10月份之前就可以刷完天勤。
-- 一天分成三段，每段看20--30页专业课即可。剩下的时间可以用来学Emacs或者翻译CLTL了
 - 最主要的还是要静下心来，把微信和QQ都删了，宁静致远，这对我这个浮躁的人来说，是最难的。
-
+- 虽然vim8出来了，但是我还是走向了Emacs的阵营。
 Contents：
 - [ ] Preface SECOND EDITION
 - [ ] Acknowledgments SECOND EDITION
