@@ -1,7 +1,10 @@
 # CLTL-translating-into-Chinese
 This project is to translate the book Common Lisp The Language: 2nd edition into Chinese. 
 - Please read the file ***About Permission*** firstly.
-接下来有时间可以慢慢翻译啦！
+
+
+终于有时间可以慢慢翻译啦！保持一星期一节。
+
 Contents：
 - [ ] Preface SECOND EDITION
 - [ ] Acknowledgments SECOND EDITION
