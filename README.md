@@ -1,8 +1,7 @@
 # CLTL-translating-into-Chinese
 This project is to translate the book Common Lisp The Language: 2nd edition into Chinese. 
 - Please read the file ***About Permission*** firstly.
-- 最主要的还是要静下心来，把微信和QQ都删了，宁静致远，这对我这个浮躁的人来说，是最难的。
-- 虽然vim8出来了，但是我还是走向了Emacs的阵营。
+接下来有时间可以慢慢翻译啦！
 Contents：
 - [ ] Preface SECOND EDITION
 - [ ] Acknowledgments SECOND EDITION
