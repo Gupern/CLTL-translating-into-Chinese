@@ -2,23 +2,22 @@
 This project is to translate the book Common Lisp The Language: 2nd edition into Chinese. 
 - Please read the file ***About Permission*** firstly.
 
+For reserve its format, I decide to edit it in the source code which is like ./CLTL_CN/clm/node*.html. And now, it restarts.
 
-终于有时间可以慢慢翻译啦！保持一星期一节。
 
 Contents：
 - [ ] Preface SECOND EDITION
 - [ ] Acknowledgments SECOND EDITION
 - [ ] Acknowledgments FIRST EDITION (1984)
-- [x] 1. Introduction
-- Editing recently
+- [ ] 1. Introduction
 - [ ] 1.1.  Purpose
-- [x] 1.2.  Notational Conventions
-- [x] 1.2.1.  Decimal Numbers
-- [x] 1.2.2.  Nil, False, and the Empty List
+- [ ] 1.2.  Notational Conventions
+- [ ] 1.2.1.  Decimal Numbers
+- [ ] 1.2.2.  Nil, False, and the Empty List
 - [ ]   Evaluation, Expansion, and Equivalence
 - [ ]   Errors
 - [ ]   Descriptions of Functions and Other Entities
-- [x]   The Lisp Reader
+- [ ]   The Lisp Reader
 - [ ]   Overview of Syntax
 - [ ] 2. Data Types
 - [ ]   Numbers
